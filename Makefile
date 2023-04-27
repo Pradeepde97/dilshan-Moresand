@@ -7,7 +7,7 @@ build-container:
 	docker build  -t $(IMAGE) .
 
 run: check-env
-	docker run --rm --env ENV=${ENV} -p $(PORT):80 --name $(CONTAINER) -d $(IMAGE)
+	docker run --rm --env ENV=${ENV} -p 800:80 --name $(CONTAINER) -d $(IMAGE)
 
 stop:
 
