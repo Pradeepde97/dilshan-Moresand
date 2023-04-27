@@ -1,29 +1,26 @@
-Sure, here's a simple example of an HTML file:
-
-php
-Copy code
-<!DOCTYPE html>
 <html>
-<head>
-	<title>My Sample HTML File</title>
-</head>
-<body>
-	<header>
-		<h1>Welcome to my website!</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<p>This is the main content of my website.</p>
-		<p>It can contain paragraphs, images, links, and other HTML elements.</p>
-	</main>
-	<footer>
-		<p>&copy; 2023 My Company. All rights reserved.</p>
-	</footer>
-</body>
+  <head>
+    <title>Hello App</title>
+    <style>
+      body {
+        transition: background-color 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, V36.0</h1>
+  </body>
+  <script>
+    let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+    function updateBodyColor() {
+      let currentColorIndex = Math.floor(Math.random() * colors.length);
+      document.body.style.backgroundColor = colors[currentColorIndex];
+    }
+    window.addEventListener('load', updateBodyColor);
+  </script>
 </html>
